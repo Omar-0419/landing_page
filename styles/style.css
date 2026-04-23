@@ -1,0 +1,90 @@
+:root{
+    --primary-color: #B87333;
+    --dark-background: #0F0F0F;
+    --secundary-background: #1A1A1A;
+    --main-text: #F5F5F5;
+    --secundary-text: #A6A6A6;
+    --card-background: #2A1F1B;
+    --border-color: #8C6239;
+    --hover-color: #D4A373; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    font-size: 16px;
+    justify-content: end;
+    gap: 30px;
+    padding: 15px;
+}
+
+nav a{
+    color: var(--main-text);
+}
+
+nav a:hover{
+    color: var(--hover-color);
+}
+
+li{
+   list-style: none;
+   
+}
+
+a{
+    text-decoration: none;
+}
+
+div#logo{
+    width: 150px;
+}
+
+#img-logo{
+    width: 150px;
+}
+
+div#fondo{
+    background-image: url(/img/fondo-home.jpg);
+    color: white;
+    height: 70vh;
+}
+
+#home{
+    padding-top: 15vh;
+    padding-left: 15px;
+    
+}
+
+div#home-text{
+    font-family: var(--title-font);
+    text-transform: uppercase;
+}
+
+div#home-text p{
+    text-transform: none;
+}
+
+div#home-text h3{
+    color: var(--primary-color); 
+}
+
+#home button{
+    width: 140px;
+    height: 50px;
+    border-radius: 5%;
+    border: none;
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    color: var(--main-text);
+}
+
