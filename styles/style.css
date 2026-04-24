@@ -7,6 +7,7 @@
     --card-background: #2A1F1B;
     --border-color: #8C6239;
     --hover-color: #D4A373; 
+    --transition: all 0.3s ease;
 }
 
 *{
@@ -34,6 +35,22 @@ nav a{
 
 nav a:hover{
     color: var(--hover-color);
+}
+
+nav button{
+    background-color: transparent;
+    border: 1px solid;
+    width: 100px;
+    height: 30px;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+nav button:hover{
+    background-color: var(--primary-color);
+    color: var(--main-text);
+    transition: var(--transition);
 }
 
 li{
