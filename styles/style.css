@@ -159,7 +159,7 @@ div#home-text p{
 
 section#schedule{
     padding: 80px 10%;
-    background-color: var(--secundary-background);
+    background: linear-gradient(to bottom, var(--dark-background), var(--secundary-background));
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -186,6 +186,11 @@ article.tarjeta{
     border: 2px solid var(--border-color);  
     transition: transform 0.3s ease;
     border-radius: 5px;
+}
+
+article.tarjeta:hover{
+    transform: translateY(-8px);
+    border-color: var(--primary-color);
 }
 
 article.tarjeta img{
@@ -215,4 +220,26 @@ article.tarjeta img{
     text-align: center;
     color: var(--secundary-text);
     padding: 0 15px 15px;
+}
+
+#ver-horario{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+#ver-horario button{
+    padding: 4px;
+    width: 15rem;
+    border: 1px solid var(--border-color);
+    background-color: transparent;
+    color: var(--border-color);
+    transition: var(--transition);
+    border-radius: 2px;
+}
+
+#ver-horario button:hover{
+    color: var(--main-text);
+    background-color: var(--primary-color);
+    transition: var(--transition);
 }
